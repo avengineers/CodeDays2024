@@ -21,3 +21,14 @@ Automotive SPICE <!-- .element: class="fragment" -->
 --
 
 ![](images/Slide5.png)
+
+--
+
+Note:
+    * Ergebnisse/artefakte (Sphinx + Doxygen)
+      * Detailed Design
+      * Unit Test Spec
+      * Unit Test Results
+    * Traceability (Sphinx needs)
+      * unique ids
+      * traceability
