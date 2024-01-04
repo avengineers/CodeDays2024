@@ -1,28 +1,24 @@
+<!-- .slide: data-transition="none-out" -->
+
 ## Automotive Software Process Improvement and Capability Determination
 
-Automotive SPICE <!-- .element: class="fragment" -->
+Automotive SPICE
 
 --
 
-![](images/Slide1.png)
+<!-- .slide: data-transition="zoom-in none-out" -->
+
+![](images/aspice_model.png)
 
 --
 
-![](images/Slide2.png)
+<!-- .slide: data-transition="fade" -->
+
+![](images/aspice_model_swe.png)
 
 --
 
-![](images/Slide3.png)
-
---
-
-![](images/Slide4.png)
-
---
-
-![](images/Slide5.png)
-
---
+![](images/aspice_traceability.png)
 
 Note:
     * Ergebnisse/artefakte (Sphinx + Doxygen)
