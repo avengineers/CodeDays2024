@@ -67,6 +67,8 @@ Unser Ziel war es von Anfang an, das alles mit möglichst wenig Aufwand zu erled
 
 ![](images/aspice_traceability_swe34.png)
 
+![](images/lc_dir_tree.png)<!-- .element: class="fragment" data-fragment-index="2" -->
+
 Note:
 
 Zu Beginn haben wir uns auf die Prozesse SWE.3 und SWE.4 konzentriert.
@@ -113,15 +115,21 @@ Die Antwort ist Sphinx, Sphinx-Needs, Doxygen und Doxysphinx.
 
 --
 
-```rst[1: 1-2|13-18]
+### Software Detailed Design
+
+![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
+
+```rst[1: 15-20]
 Software Detailed Design
 ========================
 
 Introduction
 ------------
 
-The Light Controller module is responsible for managing the behavior of a light based on the system's
-power state. This document outlines the design considerations and the high-level structure of the module.
+The Light Controller module is responsible for managing
+the behavior of a light based on the system's
+power state. This document outlines the design considerations
+and the high-level structure of the module.
 
 Design Considerations
 ---------------------
@@ -131,18 +139,12 @@ Design Considerations
    :integrity: B
 
     The light can be in one of two states: ON or OFF.
-    The state transitions are triggered by changes in the system's power state.
+    The state transitions are triggered by changes
+    in the system's power state.
 
-{% if config.BLINKING %}
-.. spec::  Blinking Behavior
-    :id: SWDD_LC-002
-    :integrity: B
 
-    When the light is ON, it may exhibit a blinking behavior.
-    The blinking rate is configurable and is determined based on an external input (main knob value).
-{% endif %}
 ```
-<!-- .element: style="font-size:10pt" -->
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
 --
 

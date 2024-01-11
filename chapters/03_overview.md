@@ -1,11 +1,12 @@
-## Target audience
+## Wer seid ihr?
 
-Humans <!-- .element: class="fragment" -->
+Menschen <!-- .element: class="fragment" -->
 
 ~~Chuck Norris~~ <!-- .element: class="fragment" -->
 
 Note:
-Diese Preäsentation und Live Demo sind für alle gedacht, die mit Softwareentwicklung zu tun haben.
+Diese Präsentation ist für alle gedacht, die mit Softwareentwicklung zu tun haben.
+
 Nur Chuck Norris braucht nicht zu kommen, weil er alles kann und alles funktioniert, was er macht.
 
 --
@@ -16,7 +17,9 @@ Nur Chuck Norris braucht nicht zu kommen, weil er alles kann und alles funktioni
 
 Note:
 Der Grund, warum Chuck Norris nicht zu diesem Meeting kommen muss, ist offensichtlich.
+
 Sein Workflow ist ganz einfach. Was er liefert, funktioniert.
+
 Für den Rest von uns ist das nicht so einfach. Wir bleiben in der Schleife, bis die Dinge wie erwartet funktionieren.
 
 --
