@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "reveal.js": "file:reveal.js"
+  },
+  "scripts": {
+    "start": "gulp serve --gulpfile reveal.js/gulpfile.js --cwd ."
+  }
+}
