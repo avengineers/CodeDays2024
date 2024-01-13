@@ -2,12 +2,13 @@
 
 --
 
-## Component    
+## Software    
 
-* 🛠️ configurable <!-- .element: class="fragment custom blur" -->
-* 🧩 transferable  <!-- .element: class="fragment custom blur" -->
-* 😎 tested <!-- .element: class="fragment custom blur" -->
-* 🔎 A.SPICE compliant <!-- .element: class="fragment custom blur" -->
+* 🛠️ konfigurierbar <!-- .element: class="fragment custom blur" -->
+* 🧩 isoliert  <!-- .element: class="fragment custom blur" -->
+* 😎 getestet <!-- .element: class="fragment custom blur" -->
+* 🔎 A.SPICE erprobt <!-- .element: class="fragment custom blur" -->
+* 📦 auslieferbar <!-- .element: class="fragment custom blur" -->
 
 Note:
 
