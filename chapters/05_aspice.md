@@ -119,7 +119,7 @@ Die Antwort ist Sphinx, Sphinx-Needs, Doxygen und Doxysphinx.
 
 ![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
-```rst[1: 15-20]
+```rst [1: 15-21]
 Software Detailed Design
 ========================
 
@@ -152,16 +152,14 @@ Design Considerations
 
 ![](images/lc_uts.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
-```C[50: ]
-/*!
-* @rst
-*
-* .. test:: light_controller.test_light_stays_off
-*    :id: TS_LC-006
-*    :tests: SWDD_LC-001, SWDD_LC-004, R_001
-*
-* @endrst
-*/
+```C++ [50: ]
+/**
+ * @rst
+ * .. test:: light_controller.test_light_stays_off
+ *    :id: TS_LC-006
+ *    :tests: SWDD_LC-001, SWDD_LC-004, R_001
+ * @endrst
+ */
 TEST(light_controller, test_light_stays_off)
 {
     CREATE_MOCK(mymock);
@@ -185,31 +183,33 @@ TEST(light_controller, test_light_stays_off)
 
 --
 
-### Productive Code
+### Software Unit
 
-```C
- /**
-  * * @rst
-  * .. impl:: Light state
-  *    :id: SWIMPL_LC-001
-  *    :implements: SWDD_LC-001
-  * @endrst
-  *
-  * @enum LightState
-  * @brief Represents the states of the light.
-  */
-typedef enum {
-    LIGHT_OFF,  /**< Represents a state where the light is turned off. */
-    LIGHT_ON    /**< Represents a state where the light is turned on with a specific color. */
-} LightState;
+![](images/lc_swu.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
+
+```C [106: ]
+/**
+ * @rst
+ * .. impl:: Light Controller's main function
+ *    :id: SWIMPL_LC-006
+ *    :implements: SWDD_LC-001
+ * @endrst
+ * 
+ * @brief Controls the light state.
+ *
+ * Uses a state machine to determine the light state based on
+ * several inputs, e.g., the system's power state.
+ */
+void lightController(void) {
+
+    switch (currentLightState) {
+    case LIGHT_OFF:
+...
+    }
+}
 ```
-<!-- .element: style="font-size:10pt" -->
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
-Note:
-    * Ergebnisse/artefakte (Sphinx + Doxygen)
-      * Detailed Design
-      * Unit Test Spec
-      * Unit Test Results
-    * Traceability (Sphinx needs)
-      * unique ids
-      * traceability
+--
+
+### Unit Test Results
