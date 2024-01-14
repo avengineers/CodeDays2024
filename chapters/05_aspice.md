@@ -148,10 +148,11 @@ Design Considerations
 
 --
 
-### Test Code
+### Unit Test Specification
 
+![](images/lc_uts.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
-```C
+```C[50: ]
 /*!
 * @rst
 *
@@ -166,15 +167,21 @@ TEST(light_controller, test_light_stays_off)
     CREATE_MOCK(mymock);
 
     // Initial state: Power is OFF, so the light should be OFF.
-    EXPECT_CALL(mymock, RteGetPowerState()).WillRepeatedly(Return(POWER_STATE_OFF));
-    EXPECT_CALL(mymock, RteSetLightValue(_)).Times(0); // Expect that the light value doesn't change.
+    EXPECT_CALL(
+        mymock,
+        RteGetPowerState()
+    ).WillRepeatedly(Return(POWER_STATE_OFF));
+    EXPECT_CALL(
+        mymock,
+        RteSetLightValue(_)
+    ).Times(0); // Expect that the light value doesn't change.
 
     for (int i = 0; i < 10; i++) {
         lightController();
     }
 }
 ```
-<!-- .element: style="font-size:10pt" -->
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
 --
 

@@ -10,7 +10,7 @@ Push-Location $PSScriptRoot
 
 try {
    scoop install nodejs
-   npm install reveal.js
+   npm install
 }
 finally {
    Pop-Location

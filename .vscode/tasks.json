@@ -4,13 +4,13 @@
       {
          "label": "Install dependencies",
          "type": "shell",
-         "command": ".\\install.ps1",
+         "command": "npm install",
          "problemMatcher": []
       },
       {
          "label": "Run local web server",
          "type": "shell",
-         "command": ".\\run.ps1",
+         "command": "npm start",
          "problemMatcher": []
       },
       {
