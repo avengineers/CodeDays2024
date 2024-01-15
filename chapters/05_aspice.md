@@ -213,3 +213,15 @@ void lightController(void) {
 --
 
 ### Unit Test Results
+
+![](images/lc_utr.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 50%" -->
+
+```rst [1: ]
+Unit Test Results
+=================
+
+.. test-report:: Unit Test Results
+    :id: TEST_RESULT_src_light_controller
+    :file: light_controller/junit.xml
+```
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 45%" -->
