@@ -11,7 +11,6 @@
 * 📦 auslieferbar <!-- .element: class="fragment custom blur" -->
 
 Note:
-
 * configurable -> one component to be used in all product variants
 * transferable -> all files relevant for a component are in one place
 * tested -> the component is tested in all variants. All variants are guaranteed to work.
