@@ -25,20 +25,12 @@ Willkommen zu unserer vielfältigen Welt der Beleuchtung! Ich möchte euch drei 
 Note:
 Was diese Lampen auf einer tieferen Ebene vereint, ist ihr Kern. Alle drei Lampen nutzen die gleiche Grundsoftware zur Ansteuerung ihrer LEDs. Diese gemeinsame Plattform ist das Herzstück unserer Produktlinie. Dazu kommen jetzt kundenspezifische Features. Für das Disco-Licht haben wir eine Blinkfunktion hinzugefügt. Beim Schlaflicht konzentrierten wir uns auf die Integration eines Farbwechsel- und Dimmmechanismus. Und das Spa-Licht verfügt über ein sanftes Pulsieren. Durch das Erkennen von Kernanteilen und dem Wiederverwenden dieser Anteile reduziert sich der Entwicklungsaufwand enorm. Die Wartungskosten sinken, da wir Code-Erosion verhindern. Und wie Kernanteile und kundenspezifische Wünsche zusammen kommen, das bestimmt unser zugrunde liegendes Build-System: Cmake.
 
-In unserem nächsten Abschnitt werde ich Euch zeigen, wie wir die 'CMake Tools Variants' in Visual Studio Code nutzen, um effizient unterschiedliche Varianten unserer Softwareproduktlinie zu managen.
-
 --
 
 ## CMake + VS Code + KConfig + TDD
 
 Note:
-
-  * das gehen wir alles mit Open Source Lösungen an
-    * --> konfigurierbare Sourcen --> SPL
-      * Git
-      * KConfig
-      * CMake und CMake Tools (Varianten/ Build Kits)
-      * Code und Test Beispiele
+In diesem Abschnitt werde ich Euch zeigen, wie wir Open-Source Tools wie CMake, VSCode und KConfig in einer testgetriebenen Umgebung kombinieren und nutzen. Die 'CMake Tools Variants' in Visual Studio Code sind der erste Einstiegspunkt, um effizient unterschiedliche Varianten unserer Softwareproduktlinie zu managen.
 
 --
 
@@ -91,14 +83,25 @@ Gleichzeitig stellt CMake durch den Configure Schritt auch die Build-Targets zur
 <!-- .slide: data-background-image="images/kconfig.png" data-background-size="contain" -->
 
 Note:
-Aber damit ist es noch nicht getan. Wir wollen ja nicht einfach nur unterschiedliche Varianten starten. Irgendwo müssen wir auch festlegen, worin sich unsere Varianten denn unterscheiden. Diese Konfiguration übernimmt KConfig, Kernel Config vom Linux Kernel. Mit KConfig sind wir in der Lage unser Feature Modell zu beschreiben und Varianten daraus abzuleiten. In diesem konkreten Fall konfigurieren wir, dass die Lampe dimmbar sein soll und lila leuchtet.
+Aber damit ist es noch nicht getan. Wir wollen ja nicht einfach nur unterschiedliche Varianten starten. Irgendwo müssen wir auch festlegen, worin sich unsere Varianten denn unterscheiden. Diese Konfiguration übernimmt KConfig, Kernel Config vom Linux Kernel. Mit KConfig sind wir in der Lage unser Feature Modell zu beschreiben und Varianten daraus abzuleiten. In diesem konkreten Fall konfigurieren wir, dass die Lampe dimmbar sein soll und in einer bestimmten Farbe leuchtet. Standardmäßig ist hier Purple, also Lila, eingestellt. Wir stellen uns jetzt mal vor ich würde das auf rot wechseln.
 
 --
 
-execution mit Unterschiedlichen Farben noch zeigen
+<!-- .slide: data-background-image="images/black-sleep-light.png" data-background-size="contain" -->
+
+Note:
+Jetzt kann ich die gebaute App, eine EXE, ausführen und bekomme eine schematische Anzeige meiner Lampenfunktionalität. Es handelt sich um die Schlaflampe und sie ist aktuell ausgeschaltet. Durch Interaktion mit dem Terminal, schalte ich die Lampe auf Knopfdruck ein.
+
+--
+
+<!-- .slide: data-background-image="images/red-sleep-light.png" data-background-size="contain" -->
+
+Note: 
+In diesem Fall habe ich sie auf rot konfiguriert, deswegen leuchtet sie rot.
 
 --
 
 <!-- .slide: data-background-image="images/test.png" data-background-size="contain" -->
 
-
+Note:
+Und da wir ja keine Chuck Norris, sondern normale Menschen sind. Kann ich dieses Verhalten eben auch abtesten. Die Tests sind auf Basis von Google Test zusammen mit Google Mock. Da das beides allerdings nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open-Source Wrapper/Konverter, auf den wir hier aber nicht im Detail eingehen können. Die Testergebnisse sind aber für weitere Schritte sehr wichtig, nämlich beim ASPICE, dazu kommen wir als nächstes.
