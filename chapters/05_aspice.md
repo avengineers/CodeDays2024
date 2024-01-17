@@ -23,30 +23,6 @@ Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht u
 
 --
 
-<!-- .slide: data-transition="zoom-in none-out" -->
-
-![](images/aspice_model.png)
-
-Note:
-
-Das ist das Prozessmodel von A.SPICE.
-
-Es besteht aus mehreren Prozessgruppen, die wiederum aus Prozessen bestehen.
-
---
-
-<!-- .slide: data-transition="fade" -->
-
-![](images/aspice_model_swe.png)
-
-Note:
-
-Klar, als Software-Entwickler interessiert uns natürlich vor allem die Software-Entwicklung.
-
-Und uns interessiert natürlich, was von uns erwartet wird.
-
---
-
 <!-- .slide: data-transition="slide-in fade-out" -->
 
 ![](images/aspice_traceability.png)
