@@ -12,6 +12,10 @@ Zudem ermöglicht es eine konsistente Qualität über verschiedene Produkte hinw
 
 Softwareproduktlinien sind besonders nützlich in Bereichen, wo ähnliche Produkte für unterschiedliche Kunden oder Märkte entwickelt werden müssen.
 
+Obwohl unser Vortrag zwar um die Automobilindustrie geht, möchte ich SPLE jetzt trotzdem am Beispiel von Lampen erklären. Es handelt sich hier um ein kleines Spielprojekt, dass wir für Demo-Zwecke aufgesetzt haben.
+
+Die Methoden lassen sich aber natürlich auf andere bereiche anwenden. Unser Framework ist produktiv im Einsatz.
+
 --
 
 ## Unsere Lampenkollektion

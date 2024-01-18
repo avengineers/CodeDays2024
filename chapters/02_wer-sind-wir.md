@@ -20,4 +20,4 @@ Ich selbst war viele Jahre in der Automobilbranche als Softwareintegrator, Softw
 
 Dabei ging es immer um sicherheitsrelevante Funktionen wie Bremssysteme oder Batteriemanagementsysteme.
 
-Jetzt arbeite ich als DevOps-Engineer bei Qytera und beschäftige mich sowohl mit modernen Arbeitsweisen als auch mit aktuellen Technologietrends.
+Jetzt arbeite ich als DevOps-Engineer und Testautomatisierer bei Qytera und beschäftige mich sowohl Softwarequalität als auch mit aktuellen Technologietrends.
