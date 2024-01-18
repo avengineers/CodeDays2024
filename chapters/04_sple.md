@@ -1,9 +1,16 @@
 ## SPLE
 
 Note:
-Softwareproduktlinien, auch bekannt als Software Product Lines (SPL), sind ein Ansatz in der Softwareentwicklung, der darauf abzielt, eine Familie von ähnlichen Softwareprodukten effizient zu entwickeln. Der Kerngedanke dabei ist, die gemeinsamen Merkmale und Funktionalitäten, die in mehreren Produkten auftreten, zu identifizieren und wiederverwendbar zu gestalten. Dieser Ansatz ermöglicht es, verschiedene Produkte zu erstellen, indem man auf einer gemeinsamen Basis von Code und Komponenten aufbaut und diese mit spezifischen, für jedes Produkt einzigartigen Funktionen erweitert.
 
-Der Vorteil dieses Ansatzes liegt vor allem in der Wiederverwendung von Software, was zu einer Reduzierung der Entwicklungszeit und -kosten führt. Zudem ermöglicht es eine konsistente Qualität über verschiedene Produkte hinweg und erleichtert die Wartung und Weiterentwicklung der Software. Softwareproduktlinien sind besonders nützlich in Bereichen, wo ähnliche Produkte für unterschiedliche Kunden oder Märkte entwickelt werden müssen.
+Softwareproduktlinien, auch bekannt als Software Product Lines (SPL), sind ein Ansatz in der Softwareentwicklung, der darauf abzielt, eine Familie von ähnlichen Softwareprodukten effizient zu entwickeln.
+
+Der Kerngedanke dabei ist, die gemeinsamen Merkmale und Funktionalitäten, die in mehreren Produkten auftreten, zu identifizieren und wiederverwendbar zu gestalten. Dieser Ansatz ermöglicht es, verschiedene Produkte zu erstellen, indem man auf einer gemeinsamen Basis von Code und Komponenten aufbaut und diese mit spezifischen, für jedes Produkt einzigartigen Funktionen erweitert.
+
+Der Vorteil dieses Ansatzes liegt vor allem in der Wiederverwendung von Software, was zu einer Reduzierung der Entwicklungszeit und -kosten führt.
+
+Zudem ermöglicht es eine konsistente Qualität über verschiedene Produkte hinweg und erleichtert die Wartung und Weiterentwicklung der Software.
+
+Softwareproduktlinien sind besonders nützlich in Bereichen, wo ähnliche Produkte für unterschiedliche Kunden oder Märkte entwickelt werden müssen.
 
 --
 
@@ -14,7 +21,22 @@ Der Vorteil dieses Ansatzes liegt vor allem in der Wiederverwendung von Software
 ![](images/spa-light.png) <!-- .element: class="fragment" data-fragment-index="3" style="float: right; width: 30%" -->
 
 Note:
-Willkommen zu unserer vielfältigen Welt der Beleuchtung! Ich möchte euch drei einzigartige Mitglieder unserer Lampenfamilie vorstellen: das Disco-Licht, das Schlaflicht und das Spa-Licht. Auf den ersten Blick erscheinen diese Lampen völlig unterschiedlich – das Disco-Licht mit seiner energiereichen Blinkfunktion, ideal für Partys; das Schlaflicht, das mit seinem sanften Farbwechsel und der Dimmfähigkeit eine beruhigende Atmosphäre für einen guten Schlaf schafft; und das Spa-Licht, das mit seinem sanften Pulsieren eine entspannende und verjüngende Wirkung entfaltet. Diese Lampen wurden entwickelt, um in verschiedenen Umgebungen jeweils eine einzigartige Stimmung zu schaffen. Doch trotz ihrer Unterschiede teilen sie eine gemeinsame Grundlage.
+
+Willkommen zu unserer vielfältigen Welt der Beleuchtung!
+
+Ich möchte euch drei einzigartige Mitglieder unserer Lampenfamilie vorstellen: das Disco-Licht, das Schlaflicht und das Spa-Licht.
+
+Auf den ersten Blick erscheinen diese Lampen völlig unterschiedlich –
+
+das Disco-Licht mit seiner energiereichen Blinkfunktion, ideal für Partys;
+
+das Schlaflicht, das mit seinem sanften Farbwechsel und der Dimmfähigkeit eine beruhigende Atmosphäre für einen guten Schlaf schafft;
+
+und das Spa-Licht, das mit seinem sanften Pulsieren eine entspannende und verjüngende Wirkung entfaltet.
+
+Diese Lampen wurden entwickelt, um in verschiedenen Umgebungen jeweils eine einzigartige Stimmung zu schaffen.
+
+Doch trotz ihrer Unterschiede teilen sie eine gemeinsame Grundlage.
 
 --
 
@@ -104,4 +126,6 @@ In diesem Fall habe ich sie auf rot konfiguriert, deswegen leuchtet sie rot.
 <!-- .slide: data-background-image="images/test.png" data-background-size="contain" -->
 
 Note:
-Und da wir ja keine Chuck Norris, sondern normale Menschen sind. Kann ich dieses Verhalten eben auch abtesten. Die Tests sind auf Basis von Google Test zusammen mit Google Mock. Da das beides allerdings nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open-Source Wrapper/Konverter, auf den wir hier aber nicht im Detail eingehen können. Die Testergebnisse sind aber für weitere Schritte sehr wichtig, nämlich beim ASPICE, dazu kommen wir als nächstes.
+Und da wir ja keine Chuck Norris, sondern normale Menschen sind. Kann ich dieses Verhalten eben auch abtesten. Die Tests sind auf Basis von Google Test zusammen mit Google Mock. Da das beides allerdings nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open-Source Wrapper/Konverter, auf den wir hier aber nicht im Detail eingehen können.
+
+Die Testergebnisse sind aber für weitere Schritte sehr wichtig, nämlich beim A.SPICE, doch dazu übergebe ich jetzt an Karsten.

@@ -1,19 +1,23 @@
 ## Wer sind wir?
 
---
+![Karsten](images/karsten.jpg) <!-- .element: style="float: left; width: 30%" -->
 
-![Matthias](images/matthias.png) <!-- .element width="40%" -->
-
-Matthias Eggert
+![Matthias](images/matthias.png) <!-- .element: style="float: right; width: 40%" -->
 
 Note:
-Matthias war viele Jahre in der Automobilbranche als Softwareintegrator, Softwareentwickler und DevOps-Engineer tätig. Dabei ging es immer um sicherheitsrelevante Funktionen wie Bremssysteme oder Batteriemanagementsysteme. Jetzt arbeitet er als DevOps-Engineer bei Qytera und beschäftigt sich sowohl mit modernen Arbeitsweisen als auch mit aktuellen Technologietrends. 
 
---
+Okay, wer sind wir eigentlich?
 
-![Karsten](images/karsten.jpg) <!-- .element width="30%" -->
+Mein alter Kollege Karsten ist seit über 18 Jahren als Softwareentwickler im Automobilbereich unterwegs.
 
-Karsten Günther
+Von Embedded C, Perl, Tcl bis hin zur Entwicklung von Tools und Jenkins Pipelines hat er eigentlich fast schon alles gemacht.
 
-Note:
-Karsten Günther ist seit über 18 Jahren als Softwareentwickler im Automobilbereich unterwegs und kann sowohl auf Erfahrungen im Embedded Bereich als auch in der Entwicklung von Tools und Jenkins Pipelines zurückblicken. Zurzeit ist er als Entwickler und Architekt im Rhein-Main-Team der Marquardt GmbH tätig und beschäftigt sich mit SPLs, CMake, Python, Test-Driven Development, CI/CD und Pair Programming.
+Zurzeit ist er als Entwickler und Architekt im Rhein-Main-Team der Marquardt GmbH tätig.
+
+Da beschäftigt er sich mit SPLs, CMake, Python und CI/CD.
+
+Ich selbst war viele Jahre in der Automobilbranche als Softwareintegrator, Softwareentwickler und DevOps-Engineer tätig.
+
+Dabei ging es immer um sicherheitsrelevante Funktionen wie Bremssysteme oder Batteriemanagementsysteme.
+
+Jetzt arbeite ich als DevOps-Engineer bei Qytera und beschäftige mich sowohl mit modernen Arbeitsweisen als auch mit aktuellen Technologietrends.

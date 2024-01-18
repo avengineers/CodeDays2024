@@ -5,31 +5,40 @@ Menschen <!-- .element: class="fragment" -->
 ~~Chuck Norris~~ <!-- .element: class="fragment" -->
 
 Note:
-Diese Präsentation ist für alle gedacht, die mit Softwareentwicklung zu tun haben.
 
-Nur Chuck Norris braucht nicht zu kommen, weil er alles kann und alles funktioniert, was er macht.
+click
+
+Diese Präsentation ist für Menschen, die mit Softwareentwicklung zu tun haben.
+
+click
+
+Sie ist nicht für Chuck Norris.
 
 --
 
-### Chuck Norris vs. Humans
+### Software Workflow
 
-![Chuck](images/chuck_norris_vs_humans.png) <!-- .element width="80%" -->
+![Chuck](images/chuck_norris_vs_humans.png) <!-- .element width="80%" class="fragment" -->
 
 Note:
-Der Grund, warum Chuck Norris nicht zu diesem Meeting kommen muss, ist offensichtlich.
 
-Sein Workflow ist ganz einfach. Was er liefert, funktioniert.
+Der Grund, warum unser Vortag nicht für Chuck Norris geeignet ist, ist ziemlich offensichtlich.
 
-Für den Rest von uns ist das nicht so einfach. Wir bleiben in der Schleife, bis die Dinge wie erwartet funktionieren.
+click
+
+Was er produziert bzw. liefert, funktioniert sofort.
+
+Für den Rest von uns ist das nicht so einfach.
+
+Wir müssen unsere Arbeitsprodukte immer wieder gegen die Anforderungen testen, damit sie wie erwartet funktionieren.
 
 --
 
-## Challenges für den automotive Software-Entwickler
+## Was waren unsere Challenges?
 
 * Projektvielfalt --> Produktfamilie --> Konfigurierbarkeit --> SPLE
 * Dokumentation und Nachweis der SW Qualität --> ASPICE
-* Funktionale Sicherheit (ISO26262)
 * Continuous Integration
 
 Note:
-ISO später.
+
