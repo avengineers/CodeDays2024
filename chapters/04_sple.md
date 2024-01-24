@@ -1,4 +1,4 @@
-## SPLE
+## Software Product Line Engineering
 
 Note:
 
