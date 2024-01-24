@@ -2,24 +2,29 @@
 
 ## A.SPICE
 
-Automotive Software Process Improvement and Capability Determination <!-- .element: class="fragment" -->
+Automotive Software Process Improvement and Capability Determination <!-- .element: class="fragment" data-fragment-index="1" -->
+
+https://vda-qmc.de/automotive-spice/ <!-- .element: class="fragment" data-fragment-index="1" -->
 
 Note:
 
-Matthias hat gerade gezeigt, wie man mit CMake und VSCode eine schöne Software-Produkt-Linie aufbauen kann.
+Matthias hat gerade gezeigt, wie man mit CMake und Visual Studio Code eine schöne Software-Produkt-Linien-Plattform aufbauen kann.
 
 Das ist aber nur ein Teil der Geschichte.
 
 In der Automobilindustrie gibt es eine Reihe von Standards, die eingehalten werden müssen. Einer davon ist A.SPICE.
 
 "click"
+
 Die Abkürzung A.SPICE steht für Automotive Software Process Improvement and Capability Determination.
 
-A.SPICE ist ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
+Klingt kompliziert, ist aber im Wesentlichen ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
 
 Es ist auch ein Reifegradmodell, das die Reifegrade 0 bis 5 definiert.
 
 Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht und müssen durch definierte Artefakte nachgewiesen werden.
+
+Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artifakte, die es zu erstellen gibt.
 
 --
 
@@ -29,13 +34,19 @@ Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht u
 
 Note:
 
-Hier sieht man eigentlich recht gut, was von uns erwartet wird.
+Hier sieht man eigentlich recht gut, was von den Entwicklern so erwartet wird.
 
 Jede Menge Artefakte, die wir erstellen müssen.
 
-Und dann muss das alles auch noch miteinander verknüpft werden.
+Und dann muss das Alles auch noch miteinander verknüpft bzgl. verlinkt werden.
 
-Unser Ziel war es von Anfang an, das alles mit möglichst wenig Aufwand zu erledigen.
+Unser Ziel war es von Anfang an, die geforderten Artefakte mit möglichst wenig Zusatzaufwand mit unserer SPLE Plattform erstellen zu können.
+
+Zunächst haben wir uns auf die Prozesse
+
+SWE.3: Software Detailed Design and Unit Construction und SWE.4: Software Unit Verification
+
+konzentriert.
 
 --
 
@@ -47,19 +58,23 @@ Unser Ziel war es von Anfang an, das alles mit möglichst wenig Aufwand zu erled
 
 Note:
 
-Zu Beginn haben wir uns auf die Prozesse SWE.3 und SWE.4 konzentriert.
+Hier sehen wir nochmal im Ausschnitt, was wir für SWE.3 und SWE.4 machen müssen.
 
-Software Detailed Design, Unit Construction und Unit Verification.
+Die Units schreiben wir in C und testen sie mit Google Test, klar, das haben wir im Griff.
 
-Die Units schreiben wir in C und testen sie mit Google Test, das haben wir im Griff.
+Die Dokumentation inkl. Software Detailed Design erzeugen wir mit Sphinx und Restructured Text, auch einfach.
 
-Aber wie schreiben wir das Software Detailed Design?
+"click"
 
-Und wie verknüpfen wir das mit den Units und den Unit Tests?
+Das alles packen wir für eine Komponente in einen Ordner, der so aussieht: doc, src und test.
+
+Aber: wie bringen wir das alles in ein Dokument und verknüpfen es korrekt miteinander?
+
+Die Antwort ist ...
 
 --
 
-## Sphinx und Sphinx-Needs
+## Sphinx-Needs
 
 conf.py:<!-- .element: class="fragment" data-fragment-index="2" -->
 ```python [152: 1|3-9|11-19]
@@ -87,18 +102,29 @@ needs_extra_links = [
 
 Note:
 
-Die Antwort ist Sphinx, Sphinx-Needs, Doxygen und Doxysphinx.
+Die Antwort ist Sphinx-Needs.
+
+Sphinx-Needs ist eine Erweiterung für Sphinx.
+
+Sie ermöglicht es, sogenannte "Needs"-Typen zu definieren und miteinander zu verlinken.
+
+"click"
+
+Wir haben für die A.SPICE Artefakte unsere eigenen Typen definiert: Requirement, Specification, Implementation und Test Case.
+
+"click"
+
+Außerdem haben wir eigene Link-Typen definiert, die die Verknüpfungen zwischen den Artefakten beschreiben.
+
+Okay, wie sieht das dann in der Umsetzung aus?
 
 --
 
 ### Software Detailed Design
 
-![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
+![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="1" style="float: right; width: 40%" -->
 
-```rst [1: 15-21]
-Software Detailed Design
-========================
-
+```rst [1: 12-18]
 Introduction
 ------------
 
@@ -120,7 +146,19 @@ Design Considerations
 
 
 ```
-<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
+<!-- .element: style="float: left; font-size:10pt; width: 55%" -->
+
+Note:
+
+Hier sehen wir ein Beispiel für ein Needs-Element im Software Detailed Design.
+
+Wir verwenden hier den Needs-Typ "spec" für Specification, geben dem spec-Element einen Namen und eine eindeutige ID an und definieren die Integritätsstufe.
+
+"click"
+
+Das generierte Dokument sieht dann so aus.
+
+Hier sieht man auch schon die Verknüpfung zu den anderen Artefakten.
 
 --
 
@@ -157,6 +195,24 @@ TEST(light_controller, test_light_stays_off)
 ```
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
+https://boschglobal.github.io/doxysphinx/ <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Note:
+
+In der Unit Test Specification sieht es dann ähnlich aus.
+
+"click"
+
+Hier ein Code-Beispiel eines Needs-Elements mit dem Typ "test" in einem rst-Block innerhalb eines Doxygen-Kommentars.
+
+Wie ihr hier sehen könnt, geben wir bei einem test-Element dann auch gleich an, welche spec-Elemente und/oder Requirements getestet werden.
+
+"click"
+
+Um diese rst-Blöcke in unser Sphinx-Dokument zu bekommen, verwenden wir ein weiteres Open-Source Tool namens doxysphinx.
+
+Doxyshpinx ermöglicht es uns, den kompletten HTML-Output von Doxygen in unser Sphinx-Dokument einzubinden.
+
 --
 
 ### Software Unit
@@ -186,6 +242,18 @@ void lightController(void) {
 ```
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
+Note:
+
+In der Software Unit sieht es dann ähnlich aus.
+
+"click"
+
+Hier verwenden wir ein Needs-Element vom Typ "impl" und verlinken die spec-Elemente, die wir implementieren.
+
+"click"
+
+Im Sphinx-Dokument erscheint dann in der Beschreibung der dokumentierten Funktion ein impl-Element mit dem Link zu dem entsprechenden spec-Element.
+
 --
 
 ### Unit Test Results
@@ -201,3 +269,17 @@ Unit Test Results
     :file: light_controller/junit.xml
 ```
 <!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 45%" -->
+
+https://sphinx-test-reports.readthedocs.io/ <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Note:
+
+Und zu guter Letzt die Unit Test Results.
+
+"click"
+
+Wir verwenden zum Einbinden der Testergebnisse eine weitere Sphinx-Erweiterung namens sphinx-test-reports.
+
+Diese Erweiterung bindet JUnit-XML-Dateien in unser Sphinx-Dokument ein und unterstützt gleichzeitig sphinx-needs.
+
+Die Verlinkung eines Testergebnisses mit dem entsprechenden Test Case erfolgt automatisch über den Namen des Test Cases.
