@@ -32,15 +32,15 @@ Für den Rest von uns ist das nicht so einfach.
 
 - Wir müssen große, komplexe Probleme in kleine Aufteilen.
 
-- Wir müssen uns schlaue Architekuren überlegen, damit wir das Rad nicht immer wieder neu erfinden.
+- Wir müssen uns schlaue Architekturen überlegen, damit wir das Rad nicht immer wieder neu erfinden.
 
 - Wir müssen unsere Software auf unsere eigenen Fehler hin überprüfen und sie auch beseitigen
 
-Das alles müssen wir kontinuirlich verbessern, um auch nur Ansatzweise an eine Chuck norris Lösung heran zu kommen.
+Das alles müssen wir kontinuierlich verbessern, um auch nur Ansatzweise an eine Chuck Norris Lösung heran zu kommen.
 
 --
 
-## Was waren unsere Challenges?
+## Was sind unsere Challenges?
 
 * Projektvielfalt <div class="fragment" style="color:red">Softwareproduktlinien</div>
 * Dokumentation und Nachweis der SW Qualität <div class="fragment" style="color:red">A.SPICE</div>
@@ -56,9 +56,9 @@ Man muss einen geeigneten Weg finden, diese Vielzahl an Produktvarianten über K
 Wir lösen das über Softwareproduktlinien und brechen damit ein wenig die Komplexität unserer Produktpalette auf.
 
 Dazu müssen wir ständig die Qualität unserer Produkte überprüfen. Das gilt im Prinzip für jedes Softwareprodukt.
-In der Automobilwelt gehts aber sehr häufig um safety-relevante Funktionen, bei denen also Menschenleben oder zumindest deren Unversehrtheit im Vordergrund steht.
+In der Automobilwelt geht's aber sehr häufig um safety-relevante Funktionen, bei denen also Menschenleben oder zumindest deren Unversehrtheit im Vordergrund steht.
 Dazu bekommt jeder Entwickler ein Prozess-Regelwerk in die Hand gedrückt. Mit dessen Hilfe lässt sich auf eine standardisierte Art und Weise Software in solchen Umgebungen entwickeln.
-Auch wenn viele es als Hinderniss ansehen, ist der Gedanke eher, dass es eine Hilfe darstellen soll. 
+Auch wenn viele es als Hindernis ansehen, ist der Gedanke eher, dass es eine Hilfe darstellen soll. 
 Ich spreche hier von Automotive Spice, oder kurz A.SPICE.
 
 Als drittes wollen wir unsere Produkte natürlich schnell fertig bekommen und ausliefern. 

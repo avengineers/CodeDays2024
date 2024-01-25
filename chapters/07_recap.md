@@ -1,17 +1,5 @@
-## Recap
+## Was waren unsere Challenges?
 
---
-
-## Software    
-
-* 🛠️ konfigurierbar <!-- .element: class="fragment custom blur" -->
-* 🧩 isoliert  <!-- .element: class="fragment custom blur" -->
-* 😎 getestet <!-- .element: class="fragment custom blur" -->
-* 🔎 A.SPICE erprobt <!-- .element: class="fragment custom blur" -->
-* 📦 auslieferbar <!-- .element: class="fragment custom blur" -->
-
-Note:
-* configurable -> one component to be used in all product variants
-* transferable -> all files relevant for a component are in one place
-* tested -> the component is tested in all variants. All variants are guaranteed to work.
-* A.SPICE -> the component is compliant with the A.SPICE process
+* Projektvielfalt <p style="color: red"><span class="fragment highlight-green" data-fragment-index="1">Softwareproduktlinien</span><span class="fragment" data-fragment-index="1">👍</span></p>
+* Dokumentation und Nachweis der SW Qualität <p style="color: red"><span class="fragment highlight-green" data-fragment-index="2">A.SPICE</span><span class="fragment" data-fragment-index="2">👍</span></p>
+* Continuous Integration <p style="color: red"><span class="fragment highlight-green" data-fragment-index="3">Weniger ist mehr</span><span class="fragment" data-fragment-index="3">👍</span></p>
