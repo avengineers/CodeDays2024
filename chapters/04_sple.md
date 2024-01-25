@@ -14,7 +14,7 @@ Softwareproduktlinien sind besonders nützlich in Bereichen, wo ähnliche Produk
 
 Obwohl unser Vortrag zwar um die Automobilindustrie geht, möchte ich SPLE jetzt trotzdem am Beispiel von Lampen erklären. Es handelt sich hier um ein kleines Spielprojekt, dass wir für Demo-Zwecke aufgesetzt haben.
 
-Die Methoden lassen sich aber natürlich auf andere bereiche anwenden. Unser Framework ist produktiv im Einsatz.
+Die Methoden lassen sich aber natürlich auf andere Bereiche anwenden. Unser Framework ist produktiv im Einsatz.
 
 --
 
@@ -95,7 +95,7 @@ Schauen wir uns also ein konkretes Beispiel an: Wir haben zwei Varianten – 'Cu
 
 --
 
-<!-- .slide: data-background-image="images/select-variant-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/select-variant-marker.png" data-background-size="contain" -->
 
 Note:
 In VS Code sieht die Auswahl einer Variante dann wie folgt aus. Zunächst sieht man unten die aktuell aktive Variante. Ein Klick darauf öffnet den Dialog für die Auswahl. Dort kann ich jetzt entweder das Disco-Licht oder das Schlaflicht auswählen. Das Spa-Licht ist aktuell noch nicht implementiert.
@@ -107,7 +107,7 @@ Sobald die Auswahl getroffen wurde, beginnt CMake mit dem Configure Schritt. Das
 
 --
 
-<!-- .slide: data-background-image="images/build-component-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/build-component-marker.png" data-background-size="contain" -->
 
 Note:
 Gleichzeitig stellt CMake durch den Configure Schritt auch die Build-Targets zur Verfügung. Ich habe jetzt also die Möglichkeit einzelne Komponenten oder die gesamte Software zu bauen. Ein Klick unten auf die Targets öffnet wie gewohnt das Auswahlmenü. Danach muss man noch mit "Build" bestätigen und das unterliegende Build-Tool, in unserem Fall Ninja, läuft los und erstellt die Binaries.
@@ -118,7 +118,7 @@ Gleichzeitig stellt CMake durch den Configure Schritt auch die Build-Targets zur
 
 --
 
-<!-- .slide: data-background-image="images/kconfig-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/kconfig-marker.png" data-background-size="contain" -->
 
 Note:
 Aber damit ist es noch nicht getan. Wir wollen ja nicht einfach nur unterschiedliche Varianten starten. Irgendwo müssen wir auch festlegen, worin sich unsere Varianten denn unterscheiden. Diese Konfiguration übernimmt KConfig, Kernel Config vom Linux Kernel. Mit KConfig sind wir in der Lage unser Feature Modell zu beschreiben und Varianten daraus abzuleiten. In diesem konkreten Fall konfigurieren wir, dass die Lampe dimmbar sein soll und in einer bestimmten Farbe leuchtet. Standardmäßig ist hier Purple, also Lila, eingestellt. Wir stellen uns jetzt mal vor ich würde das auf rot wechseln.
@@ -129,14 +129,14 @@ Aber damit ist es noch nicht getan. Wir wollen ja nicht einfach nur unterschiedl
 
 --
 
-<!-- .slide: data-background-image="images/black-sleep-light-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/black-sleep-light-marker.png" data-background-size="contain" -->
 
 Note:
 Jetzt kann ich die gebaute App, eine EXE, ausführen und bekomme eine schematische Anzeige meiner Lampenfunktionalität. Es handelt sich um die Schlaflampe und sie ist aktuell ausgeschaltet. Durch Interaktion mit dem Terminal, schalte ich die Lampe auf Knopfdruck ein.
 
 --
 
-<!-- .slide: data-background-image="images/red-sleep-light.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/red-sleep-light.png" data-background-size="contain" -->
 
 Note: 
 In diesem Fall habe ich sie auf rot konfiguriert, deswegen leuchtet sie rot.
@@ -147,7 +147,7 @@ In diesem Fall habe ich sie auf rot konfiguriert, deswegen leuchtet sie rot.
 
 --
 
-<!-- .slide: data-background-image="images/test-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/test-marker.png" data-background-size="contain" -->
 
 Note:
 Und da wir ja keine Chuck Norris, sondern normale Menschen sind. Kann ich dieses Verhalten eben auch abtesten. Die Tests sind auf Basis von Google Test zusammen mit Google Mock. Da das beides allerdings nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open-Source Wrapper/Konverter, auf den wir hier aber nicht im Detail eingehen können.
