@@ -1,8 +1,16 @@
 ## Wer sind wir?
 
-![Karsten](images/karsten.jpg) <!-- .element: style="float: left; width: 30%" -->
+<div>
+<img src="images/karsten.jpg">
 
-![Matthias](images/matthias.png) <!-- .element: style="float: right; width: 40%" -->
+[Karsten](https://www.linkedin.com/in/karnangue/)
+</div> <!-- .element: style="float: left; width: 30%" -->
+
+<div>
+<img src="images/matthias.png">
+
+[Matthias](https://www.linkedin.com/in/matthias-eggert-b7939a18a/)
+</div> <!-- .element: style="float: right; width: 40%;" -->
 
 Note:
 
