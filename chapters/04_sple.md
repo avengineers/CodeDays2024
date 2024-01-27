@@ -2,19 +2,19 @@
 
 Note:
 
-Softwareproduktlinien, auch bekannt als Software Product Lines (SPL), sind ein Ansatz in der Softwareentwicklung, der darauf abzielt, eine Familie von ähnlichen Softwareprodukten effizient zu entwickeln.
+Softwareproduktlinien, auch bekannt als Software Product Lines (SPL), sind ein Ansatz in der Softwareentwicklung, der darauf abzielt, eine Familie ähnlicher Softwareprodukte effizient zu entwickeln.
 
-Der Kerngedanke dabei ist, die gemeinsamen Merkmale und Funktionalitäten, die in mehreren Produkten auftreten, zu identifizieren und wiederverwendbar zu gestalten. Dieser Ansatz ermöglicht es, verschiedene Produkte zu erstellen, indem man auf einer gemeinsamen Basis von Code und Komponenten aufbaut und diese mit spezifischen, für jedes Produkt einzigartigen Funktionen erweitert.
+Die Grundidee besteht darin, gemeinsame Merkmale und Funktionalitäten, die in mehreren Produkten vorkommen, zu identifizieren und wiederverwendbar zu machen. Dieser Ansatz ermöglicht es, verschiedene Produkte auf der Grundlage einer gemeinsamen Code- und Komponentenbasis zu erstellen und diese um spezifische, für jedes Produkt einzigartige Funktionen zu erweitern.
 
-Der Vorteil dieses Ansatzes liegt vor allem in der Wiederverwendung von Software, was zu einer Reduzierung der Entwicklungszeit und -kosten führt.
+Der Vorteil dieses Ansatzes liegt vor allem in der Wiederverwendbarkeit der Software, was zu einer Reduzierung der Entwicklungszeit und -kosten führt.
 
-Zudem ermöglicht es eine konsistente Qualität über verschiedene Produkte hinweg und erleichtert die Wartung und Weiterentwicklung der Software.
+Darüber hinaus ermöglicht dieses Vorgehen eine konsistente Qualität über verschiedene Produkte hinweg und erleichtert die Wartung und Weiterentwicklung der Software.
 
-Softwareproduktlinien sind besonders nützlich in Bereichen, wo ähnliche Produkte für unterschiedliche Kunden oder Märkte entwickelt werden müssen.
+Software-Produktlinien sind besonders nützlich in Bereichen, in denen ähnliche Produkte für verschiedene Kunden oder Märkte entwickelt werden müssen.
 
-Obwohl unser Vortrag zwar um die Automobilindustrie geht, möchte ich SPLE jetzt trotzdem am Beispiel von Lampen erklären. Es handelt sich hier um ein kleines Spielprojekt, dass wir für Demo-Zwecke aufgesetzt haben.
+Obwohl es in unserem Vortrag um die Automobilindustrie geht, möchte ich SPLE jetzt am Beispiel von Lampen erklären. Es handelt sich dabei um ein kleines Spielprojekt, das wir zu Demonstrationszwecken erstellt haben.
 
-Die Methoden lassen sich aber natürlich auf andere Bereiche anwenden. Unser Framework ist produktiv im Einsatz.
+Die Methoden sind aber natürlich auch auf andere Bereiche übertragbar. Unser Framework ist mit realen und komplexen Projekten produktiv im Einsatz.
 
 --
 
@@ -26,21 +26,27 @@ Die Methoden lassen sich aber natürlich auf andere Bereiche anwenden. Unser Fra
 
 Note:
 
-Willkommen zu unserer vielfältigen Welt der Beleuchtung!
+Also dann, willkommen in unserer vielfältigen Welt der Beleuchtung!
 
-Ich möchte euch drei einzigartige Mitglieder unserer Lampenfamilie vorstellen: das Disco-Licht, das Schlaflicht und das Spa-Licht.
+Ich möchte euch drei einzigartige Mitglieder unserer Lampenfamilie vorstellen.
 
-Auf den ersten Blick erscheinen diese Lampen völlig unterschiedlich –
+Auf den ersten Blick scheinen diese Lampen völlig unterschiedlich zu sein.
 
-das Disco-Licht mit seiner energiereichen Blinkfunktion, ideal für Partys;
+(click)
 
-das Schlaflicht, das mit seinem sanften Farbwechsel und der Dimmfähigkeit eine beruhigende Atmosphäre für einen guten Schlaf schafft;
+Das Disco-Licht mit seiner energetischen Blinkfunktion, ideal für Partys;
 
-und das Spa-Licht, das mit seinem sanften Pulsieren eine entspannende und verjüngende Wirkung entfaltet.
+(click)
+
+Das Schlaflicht, das mit seinem sanften Farbwechsel und seiner Dimmbarkeit eine beruhigende Atmosphäre für einen guten Schlaf schafft;
+
+(click)
+
+Und das Spa-Licht, das mit seinem sanften Pulsieren entspannend und verjüngend wirkt.
 
 Diese Lampen wurden entwickelt, um in verschiedenen Umgebungen jeweils eine einzigartige Stimmung zu schaffen.
 
-Doch trotz ihrer Unterschiede teilen sie eine gemeinsame Grundlage.
+Bei aller Unterschiedlichkeit haben sie jedoch eines gemeinsam.
 
 --
 
@@ -49,14 +55,34 @@ Doch trotz ihrer Unterschiede teilen sie eine gemeinsame Grundlage.
 ![](images/core-assets.png) <!-- .element: style="width: 50%" -->
 
 Note:
-Was diese Lampen auf einer tieferen Ebene vereint, ist ihr Kern. Alle drei Lampen nutzen die gleiche Grundsoftware zur Ansteuerung ihrer LEDs. Diese gemeinsame Plattform ist das Herzstück unserer Produktlinie. Dazu kommen jetzt kundenspezifische Features. Für das Disco-Licht haben wir eine Blinkfunktion hinzugefügt. Beim Schlaflicht konzentrierten wir uns auf die Integration eines Farbwechsel- und Dimmmechanismus. Und das Spa-Licht verfügt über ein sanftes Pulsieren. Durch das Erkennen von Kernanteilen und dem Wiederverwenden dieser Anteile reduziert sich der Entwicklungsaufwand enorm. Die Wartungskosten sinken, da wir Code-Erosion verhindern. Und wie Kernanteile und kundenspezifische Wünsche zusammen kommen, das bestimmt unser zugrunde liegendes Build-System: Cmake.
+Was diese Lampen auf einer tieferen Ebene verbindet, ist ihr Kern. 
+
+Alle drei Lampen verwenden die gleiche Basissoftware zur Ansteuerung ihrer LEDs. 
+
+Diese gemeinsame Plattform ist der Kern unserer Produktlinie. 
+
+Hinzu kommen nun kundenspezifische Features. 
+
+Bei der Disco-Leuchte haben wir eine Blinkfunktion hinzugefügt. 
+
+Beim Schlaflicht haben wir uns auf die Integration eines Farbwechsel- und Dimmmechanismus konzentriert. 
+
+Und das Spa-Licht hat ein sanftes Pulsieren. 
+
+Durch das Erkennen und Wiederverwenden von Kernkomponenten wird der Entwicklungsaufwand enorm reduziert. 
+
+Die Wartungskosten sinken, weil wir Code-Erosion vermeiden. 
+
+Und wie Kernteile und Kundenwünsche zusammenkommen, bestimmt unser zugrunde liegendes Build-System bestehend aus Cmake und KConfig.
 
 --
 
 ## CMake + VS Code + KConfig + TDD
 
 Note:
-In diesem Abschnitt werde ich Euch zeigen, wie wir Open-Source Tools wie CMake, VSCode und KConfig in einer testgetriebenen Umgebung kombinieren und nutzen. Die 'CMake Tools Variants' in Visual Studio Code sind der erste Einstiegspunkt, um effizient unterschiedliche Varianten unserer Softwareproduktlinie zu managen.
+In diesem Abschnitt werde ich zeigen, wie wir Open-Source-Tools wie CMake, VSCode und KConfig in einer testgetriebenen Umgebung kombinieren und einsetzen. 
+
+Die 'CMake Tools Variants' in Visual Studio Code sind der erste Einstiegspunkt, um die verschiedenen Varianten unserer Software-Produktlinie effizient zu verwalten.
 
 --
 
@@ -87,69 +113,158 @@ In diesem Abschnitt werde ich Euch zeigen, wie wir Open-Source Tools wie CMake, 
 ```
 
 Note:
-Schauen wir uns also ein konkretes Beispiel an: Wir haben zwei Varianten – 'CustA/Disco' und 'CustB/Sleep'. Jede Variante wird in der CMake-Tools-Konfiguration definiert. An dieser Stelle definieren wir hauptsächlich die Anzeigenamen und Umgebungsvariablen. Durch die Definition dieser Varianten können wir schnell zwischen verschiedenen Build-Konfigurationen wechseln. Eine Konfiguration kann dabei als Standardwert eingestellt werden. Dies ist ein wesentlicher Teil unserer Entwicklungsstrategie, da es uns ermöglicht, maßgeschneiderte Lösungen für verschiedene Kundenanforderungen zu erstellen, während wir gleichzeitig eine konsistente und effiziente Basis beibehalten. Die Konfigurationen sehen in der Regel sehr ähnlich aus und sind leicht erweiterbar.
+Schauen wir uns ein konkretes Beispiel an: Wir haben zwei Varianten - 'CustA/Disco' und 'CustB/Sleep'. 
+
+(click)
+
+Jede Variante wird in der Konfiguration des CMake-Tools definiert. 
+
+Hier definieren wir hauptsächlich die Anzeigenamen und Umgebungsvariablen. 
+
+(click)
+
+Durch die Definition dieser Varianten können wir schnell zwischen verschiedenen Build-Konfigurationen wechseln. 
+
+(click)
+
+Eine Konfiguration kann als Standard gesetzt werden. 
+
+Dies ist ein wichtiger Teil unserer Entwicklungsstrategie, da wir so maßgeschneiderte Lösungen für unterschiedliche Kundenanforderungen erstellen können und gleichzeitig eine konsistente und effiziente Basis beibehalten. 
+
+Die Konfigurationen sind in der Regel sehr ähnlich und leicht erweiterbar.
 
 --
 
-<!-- .slide: data-background-image="images/select-variant.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="fade-in none-out" data-background-image="images/select-variant.png" data-background-size="contain" -->
+
+Note:
+
+Wir starten hier mit Visual Studio Code, mit einer Reihe von Plugins. Unter anderem dabei: C/C++ Tools und vor Allem auch den CMake-Tools.
+
+In VS Code sieht die Auswahl einer Variante dann wie folgt aus.
 
 --
 
 <!-- .slide: data-background-transition="none" data-background-image="images/select-variant-marker.png" data-background-size="contain" -->
 
 Note:
-In VS Code sieht die Auswahl einer Variante dann wie folgt aus. Zunächst sieht man unten die aktuell aktive Variante. Ein Klick darauf öffnet den Dialog für die Auswahl. Dort kann ich jetzt entweder das Disco-Licht oder das Schlaflicht auswählen. Das Spa-Licht ist aktuell noch nicht implementiert.
-Sobald die Auswahl getroffen wurde, beginnt CMake mit dem Configure Schritt. Das bereitet gleichzeitig auch die IDE und IntelliSense auf diese Variante vor. Schließlich will ich Code-Completion, Präprozessor-Direktiven und andere Dinge für meine aktive Variante sehen.
+
+Zunächst sieht man unten die gerade aktive Variante. 
+
+Ein Klick darauf öffnet den Auswahldialog. 
+
+Dort kann ich nun entweder das Discolicht oder das Schlaflicht auswählen. 
+
+Das Spa-Licht ist derzeit noch nicht implementiert.
+
+Sobald die Auswahl getroffen wurde, beginnt CMake mit dem Configure-Schritt. 
+
+Dieser bereitet gleichzeitig die IDE und IntelliSense auf diese Variante vor. 
+
+Zuletzt möchte ich die Code-Vervollständigung, Präprozessor-Direktiven und andere Dinge für meine aktive Variante sehen.
 
 --
 
-<!-- .slide: data-background-image="images/build-component.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="slide-in fade-out" data-background-image="images/build-component.png" data-background-size="contain" -->
+
+Note:
+
+Wenn ich mich für eine Variante entschieden habe, möchte ich natürlich mein Projekt bauen. 
+
+CMake stellt durch den Configure-Schritt auch die Build-Targets zur Verfügung. 
+
+Ich habe nun also die Möglichkeit, einzelne Komponenten oder die gesamte Software zu bauen. 
+
+Immer im Kontext der Variante.
 
 --
 
 <!-- .slide: data-background-transition="none" data-background-image="images/build-component-marker.png" data-background-size="contain" -->
 
 Note:
-Gleichzeitig stellt CMake durch den Configure Schritt auch die Build-Targets zur Verfügung. Ich habe jetzt also die Möglichkeit einzelne Komponenten oder die gesamte Software zu bauen. Ein Klick unten auf die Targets öffnet wie gewohnt das Auswahlmenü. Danach muss man noch mit "Build" bestätigen und das unterliegende Build-Tool, in unserem Fall Ninja, läuft los und erstellt die Binaries.
+
+Ein Klick unten auf die Targets öffnet wie gewohnt das Auswahlmenü. 
+
+Danach muss noch mit "Build" bestätigt werden und das darunterliegende Build-Tool, in unserem Fall Ninja, startet und erstellt die Binaries.
 
 --
 
-<!-- .slide: data-background-image="images/kconfig.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="slide-in fade-out" data-background-image="images/kconfig.png" data-background-size="contain" -->
+
+Note:
+
+Aber das ist noch nicht alles. 
+
+Wir wollen ja nicht einfach verschiedene Varianten starten. 
+
+Irgendwo müssen wir auch festlegen, worin sich unsere Varianten unterscheiden. 
 
 --
 
 <!-- .slide: data-background-transition="none" data-background-image="images/kconfig-marker.png" data-background-size="contain" -->
 
 Note:
-Aber damit ist es noch nicht getan. Wir wollen ja nicht einfach nur unterschiedliche Varianten starten. Irgendwo müssen wir auch festlegen, worin sich unsere Varianten denn unterscheiden. Diese Konfiguration übernimmt KConfig, Kernel Config vom Linux Kernel. Mit KConfig sind wir in der Lage unser Feature Modell zu beschreiben und Varianten daraus abzuleiten. In diesem konkreten Fall konfigurieren wir, dass die Lampe dimmbar sein soll und in einer bestimmten Farbe leuchtet. Standardmäßig ist hier Purple, also Lila, eingestellt. Wir stellen uns jetzt mal vor ich würde das auf rot wechseln.
+Diese Konfiguration übernimmt KConfig, Kernel Config aus dem Linux Kernel. 
+
+Mit KConfig können wir unser Feature-Modell beschreiben und daraus Varianten ableiten. 
+
+In diesem konkreten Fall konfigurieren wir, dass die Lampe dimmbar sein und in einer bestimmten Farbe leuchten soll. 
+
+Standardmäßig ist hier Purple, also Lila eingestellt. Wir stellen uns nun vor, dass ich das auf Rot ändere.
 
 --
 
-<!-- .slide: data-background-image="images/black-sleep-light.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="slide-in fade-out" data-background-image="images/black-sleep-light.png" data-background-size="contain" -->
+
+Note:
+
+Jetzt kann ich die erstellte Anwendung, eine EXE, ausführen und erhalte eine schematische Darstellung der Funktionalität meiner Lampe.
 
 --
 
 <!-- .slide: data-background-transition="none" data-background-image="images/black-sleep-light-marker.png" data-background-size="contain" -->
 
 Note:
-Jetzt kann ich die gebaute App, eine EXE, ausführen und bekomme eine schematische Anzeige meiner Lampenfunktionalität. Es handelt sich um die Schlaflampe und sie ist aktuell ausgeschaltet. Durch Interaktion mit dem Terminal, schalte ich die Lampe auf Knopfdruck ein.
+
+Es ist die Nachttischlampe und sie ist momentan ausgeschaltet. 
+
+Durch Interaktion mit dem Terminal schalte ich die Lampe per Knopfdruck ein.
 
 --
 
 <!-- .slide: data-background-transition="none" data-background-image="images/red-sleep-light.png" data-background-size="contain" -->
 
 Note: 
+
 In diesem Fall habe ich sie auf rot konfiguriert, deswegen leuchtet sie rot.
 
 --
 
-<!-- .slide: data-background-image="images/test.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="none" data-background-image="images/test.png" data-background-size="contain" -->
+
+Note:
+
+Und da wir nicht Chuck Norris sind, sondern normale Menschen, muss ich dieses Verhalten auch testen. 
+
+Die Tests basieren auf Google Test zusammen mit Google Mock. 
+
+Da beides aber nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open Source Wrapper/Konverter, auf den wir hier aber nicht näher eingehen können.
 
 --
 
-<!-- .slide: data-background-transition="none" data-background-image="images/test-marker.png" data-background-size="contain" -->
+<!-- .slide: data-background-transition="slide-in fade-out" data-background-transition="none" data-background-image="images/test-marker.png" data-background-size="contain" -->
 
 Note:
-Und da wir ja keine Chuck Norris, sondern normale Menschen sind. Kann ich dieses Verhalten eben auch abtesten. Die Tests sind auf Basis von Google Test zusammen mit Google Mock. Da das beides allerdings nur für C++ ist, unsere Lampen aber in embedded-C entwickelt werden, haben wir dafür einen eigenen Open-Source Wrapper/Konverter, auf den wir hier aber nicht im Detail eingehen können.
+Wichtig ist auch hier wieder ein Feature der CMake Tools, die Build Kits. 
 
-Die Testergebnisse sind aber für weitere Schritte sehr wichtig, nämlich beim A.SPICE, doch dazu übergebe ich jetzt an Karsten.
+Denn für die Tests brauchen wir andere Compiler-Einstellungen als für die Produktiv-Sourcen.
+
+Deshalb müssen wir zuerst von 'prod' auf 'test' umschalten.
+
+Dann entscheiden wir, welchen Teil der Software wir testen wollen und sehen direkt die Testergebnisse und die Testabdeckung.
+
+Dabei müssen die Tests in der Lage sein, alle Varianten abzudecken.
+
+So können Tests und Komponenten unabhängig von den Projekten entwickelt werden, in denen sie eingesetzt werden.
+
+Die Testergebnisse sind auch für weitere Schritte sehr wichtig, nämlich beim A.SPICE, doch dazu übergebe ich jetzt an Karsten.

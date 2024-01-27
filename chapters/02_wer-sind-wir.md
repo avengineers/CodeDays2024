@@ -18,14 +18,18 @@ Okay, wer sind wir eigentlich?
 
 Mein alter Kollege Karsten ist seit über 18 Jahren als Softwareentwickler im Automobilbereich unterwegs.
 
-Von Embedded C, Perl, Tcl bis hin zur Entwicklung von Tools und Jenkins Pipelines hat er eigentlich fast schon alles gemacht.
+Von Embedded C, Perl, Tcl bis hin zur Entwicklung von Tools und Jenkins Pipelines hat er eigentlich schon fast alles gemacht.
 
-Zurzeit ist er als Entwickler und Architekt im Rhein-Main-Team der Marquardt GmbH tätig.
+Derzeit arbeitet er als Entwickler und Architekt im Rhein-Main-Team der Marquardt GmbH.
 
-Da beschäftigt er sich mit SPLs, CMake, Python und CI/CD.
+Dort beschäftigt er sich mit Software-Produktlinien, CMake, Python und CI/CD.
 
-Ich selbst war viele Jahre in der Automobilbranche als Softwareintegrator, Softwareentwickler und DevOps-Engineer tätig.
+Ich selbst habe auch einige Jahre in der Automobilindustrie als Softwareintegrator, Softwareentwickler und DevOps Engineer gearbeitet.
 
 Dabei ging es immer um sicherheitsrelevante Funktionen wie Bremssysteme oder Batteriemanagementsysteme.
 
-Jetzt arbeite ich als DevOps-Engineer und Testautomatisierer bei Qytera und beschäftige mich sowohl Softwarequalität als auch mit aktuellen Technologietrends.
+Wir haben schon vor gut 8 Jahren bei Continental zusammengearbeitet und sind dann gleichzeitig zu Marquardt gewechselt.
+
+Dort haben wir gemeinsam an unserer Lösung für Software-Produktlinien gearbeitet, die wir heute vorstellen wollen.
+
+Mittlerweile bin ich wieder gewechselt und arbeite als DevOps Engineer und Testautomatisierer bei der Qytera GmbH und beschäftige mich viel mit Softwarequalität.

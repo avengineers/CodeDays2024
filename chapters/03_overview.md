@@ -6,11 +6,11 @@ Menschen <!-- .element: class="fragment" -->
 
 Note:
 
-click
+(click)
 
-Diese Präsentation ist für Menschen, die mit Softwareentwicklung zu tun haben.
+Diese Präsentation richtet sich an alle, die in der Softwareentwicklung tätig sind.
 
-click
+(click)
 
 Sie ist nicht für Chuck Norris.
 
@@ -22,21 +22,21 @@ Sie ist nicht für Chuck Norris.
 
 Note:
 
-Der Grund, warum unser Vortag nicht für Chuck Norris geeignet ist, ist ziemlich offensichtlich.
+Warum unser Vortag nicht für Chuck Norris geeignet ist, liegt auf der Hand.
 
-click
+(click)
 
-Was er produziert bzw. liefert, funktioniert sofort.
+Was er produziert oder liefert, funktioniert sofort.
 
 Für den Rest von uns ist das nicht so einfach. 
 
-- Wir müssen große, komplexe Probleme in kleine Aufteilen.
+- Wir müssen große, komplexe Probleme in kleine zerlegen.
 
-- Wir müssen uns schlaue Architekturen überlegen, damit wir das Rad nicht immer wieder neu erfinden.
+- Wir müssen über intelligente Architekturen nachdenken, damit wir das Rad nicht immer wieder neu erfinden.
 
-- Wir müssen unsere Software auf unsere eigenen Fehler hin überprüfen und sie auch beseitigen
+- Wir müssen unsere Software auf eigene Fehler untersuchen und diese beseitigen.
 
-Das alles müssen wir kontinuierlich verbessern, um auch nur Ansatzweise an eine Chuck Norris Lösung heran zu kommen.
+All das müssen wir ständig verbessern, um auch nur in die Nähe einer Chuck-Norris-Lösung zu kommen.
 
 --
 
@@ -48,19 +48,25 @@ Das alles müssen wir kontinuierlich verbessern, um auch nur Ansatzweise an eine
 
 Note:
 
-Die eben angedeuteten Hürden sind vielleicht allen bekannt. Bei uns ist es aber sicher eine spzielle Ausrichtung. 
+Die eben genannten Hindernisse sind vielleicht allen bekannt. In der Automobilbranche sind sie aber sicherlich besonders ausgeprägt. 
 
-In der Automobilwelt stehen wir einer unglaublichen Produktvielfalt gegenüber. Zig unterschiedliche Hersteller, mit unterschiedlichen Modellen, Modellvarianten, und dann noch angepasst auf unterschiedliche Märkte und Regionen je nach gesetzlichen Vorgaben. 
-Jedes Produkt hier als ein einzelnen Projekt aufzusetzen und die Software immer Anfang an neu zu schreiben, wäre der Tod für jedes Unternehmen.
-Man muss einen geeigneten Weg finden, diese Vielzahl an Produktvarianten über Konfigurationen abzubilden.
-Wir lösen das über Softwareproduktlinien und brechen damit ein wenig die Komplexität unserer Produktpalette auf.
+(click)
 
-Dazu müssen wir ständig die Qualität unserer Produkte überprüfen. Das gilt im Prinzip für jedes Softwareprodukt.
-In der Automobilwelt geht's aber sehr häufig um safety-relevante Funktionen, bei denen also Menschenleben oder zumindest deren Unversehrtheit im Vordergrund steht.
-Dazu bekommt jeder Entwickler ein Prozess-Regelwerk in die Hand gedrückt. Mit dessen Hilfe lässt sich auf eine standardisierte Art und Weise Software in solchen Umgebungen entwickeln.
-Auch wenn viele es als Hindernis ansehen, ist der Gedanke eher, dass es eine Hilfe darstellen soll. 
-Ich spreche hier von Automotive Spice, oder kurz A.SPICE.
+In der Automobilwelt haben wir es mit einer unglaublichen Produktvielfalt zu tun. Zig verschiedene Hersteller, mit verschiedenen Modellen, Modellvarianten und dann noch angepasst an verschiedene Märkte und Regionen, je nach gesetzlichen Vorgaben. 
+Hier jedes Produkt als Einzelprojekt aufzusetzen und die Software immer wieder neu zu schreiben, wäre für jedes Unternehmen der Tod.
+Man muss einen geeigneten Weg finden, diese Vielzahl von Produktvarianten über Konfigurationen abzubilden.
+Wir lösen das über Software-Produktlinien und brechen damit die Komplexität unserer Produktpalette ein Stück weit auf.
 
-Als drittes wollen wir unsere Produkte natürlich schnell fertig bekommen und ausliefern. 
-Time-to-Market ist vielleicht nicht alles, aber eine gute Basis
-Hier werden wir im späteren Verlauf erklären, wie unsere Lösung aussieht, und warum man für gutes CI eigentlich gar nicht so viel benötigt.
+(click)
+
+Dazu müssen wir die Qualität unserer Produkte ständig überprüfen. Das gilt im Prinzip für jedes Softwareprodukt.
+In der Automobilwelt geht es aber sehr häufig um sicherheitsrelevante Funktionen, bei denen also Menschenleben oder zumindest deren Unversehrtheit im Vordergrund stehen.
+Dafür bekommt jeder Entwickler ein Prozessregelwerk an die Hand. Mit dessen Hilfe kann Software in solchen Umgebungen standardisiert entwickelt werden.
+Auch wenn viele das als Hindernis sehen, ist es eher als Hilfe gedacht. 
+Ich spreche hier von Automotive Spice, kurz A.SPICE.
+
+(click)
+
+Drittens wollen wir unsere Produkte natürlich schnell fertig stellen und ausliefern. 
+Time-to-Market ist vielleicht nicht alles, aber es ist eine gute Basis.
+Wie unsere Lösung aussieht und warum man für ein gutes CI eigentlich gar nicht so viel braucht, werden wir nun Stück für Stück erklären.
