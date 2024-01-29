@@ -10,9 +10,7 @@ Note:
 
 Matthias hat gerade gezeigt, wie man mit CMake und Visual Studio Code eine schöne Software-Produkt-Linien-Plattform aufbauen kann.
 
-Das ist aber nur ein Teil der Geschichte.
-
-In der Automobilindustrie gibt es eine Reihe von Standards, die eingehalten werden müssen. Einer davon ist A.SPICE.
+Kommen wir nun zu unserer zweiten Challenge: A.SPICE.
 
 "click"
 
@@ -20,7 +18,7 @@ Die Abkürzung A.SPICE steht für Automotive Software Process Improvement and Ca
 
 Klingt kompliziert, ist aber im Wesentlichen ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
 
-Es ist auch ein Reifegradmodell, das die Reifegrade 0 bis 5 definiert.
+Es ist auch ein Reifegradmodel, das die Reifegrade 0 bis 5 definiert.
 
 Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht und müssen durch definierte Artefakte nachgewiesen werden.
 
@@ -34,9 +32,7 @@ Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artifakte, die e
 
 Note:
 
-Hier sieht man eigentlich recht gut, was von den Entwicklern so erwartet wird.
-
-Jede Menge Artefakte, die wir erstellen müssen.
+Hier sieht man eigentlich recht gut, was von den Entwicklern so erwartet wird: Jede Menge Artefakte.
 
 Und dann muss das Alles auch noch miteinander verknüpft bzgl. verlinkt werden.
 
@@ -102,8 +98,6 @@ needs_extra_links = [
 
 Note:
 
-Die Antwort ist Sphinx-Needs.
-
 Sphinx-Needs ist eine Erweiterung für Sphinx.
 
 Sie ermöglicht es, sogenannte "Needs"-Typen zu definieren und miteinander zu verlinken.
@@ -150,9 +144,9 @@ Design Considerations
 
 Note:
 
-Hier sehen wir ein Beispiel für ein Needs-Element im Software Detailed Design.
+Hier sehen wir ein Beispiel für ein Needs-Element im Software Detailed Design, also direkt in rst.
 
-Wir verwenden hier den Needs-Typ "spec" für Specification, geben dem spec-Element einen Namen und eine eindeutige ID an und definieren die Integritätsstufe.
+Wir verwenden hier den Needs-Typ "spec" für Specification, geben dem spec-Element einen Namen und eine eindeutige ID.
 
 "click"
 
@@ -199,7 +193,7 @@ https://boschglobal.github.io/doxysphinx/ <!-- .element: class="fragment" data-f
 
 Note:
 
-In der Unit Test Specification sieht es dann ähnlich aus.
+In der Unit Test Specification, also direkt im Testcode sieht es etwas anders aus.
 
 "click"
 
@@ -209,7 +203,7 @@ Wie ihr hier sehen könnt, geben wir bei einem test-Element dann auch gleich an,
 
 "click"
 
-Um diese rst-Blöcke in unser Sphinx-Dokument zu bekommen, verwenden wir ein weiteres Open-Source Tool namens doxysphinx.
+Um diese rst-Blöcke in unser Sphinx-Dokument zu bekommen, verwenden wir zum einen Doxygen und dazu ein weiteres Open-Source Tool namens doxysphinx.
 
 Doxyshpinx ermöglicht es uns, den kompletten HTML-Output von Doxygen in unser Sphinx-Dokument einzubinden.
 
@@ -283,3 +277,5 @@ Wir verwenden zum Einbinden der Testergebnisse eine weitere Sphinx-Erweiterung n
 Diese Erweiterung bindet JUnit-XML-Dateien in unser Sphinx-Dokument ein und unterstützt gleichzeitig sphinx-needs.
 
 Die Verlinkung eines Testergebnisses mit dem entsprechenden Test Case erfolgt automatisch über den Namen des Test Cases.
+
+Fazit: mit Sphinx, Sphinx-needs, Doxygen, doxysphinx und sphinx-test-reports haben wir damit alles zusammengebracht, was wir für Automotive SPICE bzgl. Unit Construction und Validation so brauchen.
