@@ -70,7 +70,7 @@ Die Antwort ist ...
 
 --
 
-## Sphinx-Needs
+## Sphinx + Sphinx-Needs
 
 conf.py:<!-- .element: class="fragment" data-fragment-index="2" -->
 ```python [152: 1|3-9|11-19]
@@ -97,6 +97,10 @@ needs_extra_links = [
 <!-- .element: class="fragment" data-fragment-index="2" style="font-size:10pt" -->
 
 Note:
+
+Sphinx und Sphinx-Needs
+
+"click"
 
 Sphinx-Needs ist eine Erweiterung für Sphinx.
 
@@ -273,6 +277,8 @@ Und zu guter Letzt die Unit Test Results.
 "click"
 
 Wir verwenden zum Einbinden der Testergebnisse eine weitere Sphinx-Erweiterung namens sphinx-test-reports.
+
+"click"
 
 Diese Erweiterung bindet JUnit-XML-Dateien in unser Sphinx-Dokument ein und unterstützt gleichzeitig sphinx-needs.
 
