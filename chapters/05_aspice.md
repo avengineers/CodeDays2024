@@ -8,21 +8,21 @@ https://vda-qmc.de/automotive-spice/ <!-- .element: class="fragment" data-fragme
 
 Note:
 
-Matthias hat gerade gezeigt, wie man mit CMake und Visual Studio Code eine schöne Software-Produkt-Linien-Plattform aufbauen kann.
+Matthias hat gerade gezeigt, wie wir mit CMake und Visual Studio Code eine schöne Software-Produkt-Linien-Plattform aufbauen.
 
 Kommen wir nun zu unserer zweiten Challenge: A.SPICE.
 
 "click"
 
-Die Abkürzung A.SPICE steht für Automotive Software Process Improvement and Capability Determination.
+Die Abkürzung A.SPICE steht für ...
 
-Klingt kompliziert, ist aber im Wesentlichen ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
+Klingt fancy, ist aber im Wesentlichen ein Prozessmodell, das die Entwicklung von Software in der Automobilindustrie beschreibt.
 
 Es ist auch ein Reifegradmodel, das die Reifegrade 0 bis 5 definiert.
 
 Diese Reifegrade werden durch die Erfüllung von Prozessanforderungen erreicht und müssen durch definierte Artefakte nachgewiesen werden.
 
-Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artifakte, die es zu erstellen gibt.
+Ich will auf die Reifegrade nicht näher eingehen, aber auf die Artefakte, die es zu erstellen gibt.
 
 --
 
@@ -36,7 +36,7 @@ Hier sieht man eigentlich recht gut, was von den Entwicklern so erwartet wird: J
 
 Und dann muss das Alles auch noch miteinander verknüpft bzgl. verlinkt werden.
 
-Unser Ziel war es von Anfang an, die geforderten Artefakte mit möglichst wenig Zusatzaufwand mit unserer SPLE Plattform erstellen zu können.
+Und da wir als Softwerker natürlich alles automatisieren wollen, ist es unser Ziel, die geforderten Artefakte mit möglichst wenig Zusatzaufwand mit unserer Plattform erstellen zu können.
 
 Zunächst haben wir uns auf die Prozesse
 
@@ -56,7 +56,7 @@ Note:
 
 Hier sehen wir nochmal im Ausschnitt, was wir für SWE.3 und SWE.4 machen müssen.
 
-Die Units schreiben wir in C und testen sie mit Google Test, klar, das haben wir im Griff.
+Die Units schreiben wir in C und testen sie mit Google Test oder was Ähnliches, klar, das haben wir im Griff.
 
 Die Dokumentation inkl. Software Detailed Design erzeugen wir mit Sphinx und Restructured Text, auch einfach.
 
@@ -102,7 +102,7 @@ Sphinx und Sphinx-Needs
 
 "click"
 
-Sphinx-Needs ist eine Erweiterung für Sphinx.
+Sphinx-Needs ist eine Open-Source Erweiterung für Sphinx.
 
 Sie ermöglicht es, sogenannte "Needs"-Typen zu definieren und miteinander zu verlinken.
 
@@ -114,7 +114,7 @@ Wir haben für die A.SPICE Artefakte unsere eigenen Typen definiert: Requirement
 
 Außerdem haben wir eigene Link-Typen definiert, die die Verknüpfungen zwischen den Artefakten beschreiben.
 
-Okay, wie sieht das dann in der Umsetzung aus?
+Okay, wie sieht das dann im Code aus?
 
 --
 
