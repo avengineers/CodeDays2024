@@ -120,7 +120,7 @@ Okay, wie sieht das dann im Code aus?
 
 ### Software Detailed Design
 
-![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="1" style="float: right; width: 40%" -->
+![](images/lc_swdd.png) <!-- .element: class="fragment" data-fragment-index="2" style="float: right; width: 40%" -->
 
 ```rst [1: 12-18]
 Introduction
@@ -144,9 +144,13 @@ Design Considerations
 
 
 ```
-<!-- .element: style="float: left; font-size:10pt; width: 55%" -->
+<!-- .element: class="fragment" data-fragment-index="1" style="float: left; font-size:10pt; width: 55%" -->
 
 Note:
+
+Zuerst schauen wir uns das Software Detailed Design an.
+
+"click"
 
 Hier sehen wir ein Beispiel für ein Needs-Element im Software Detailed Design, also direkt in rst.
 
